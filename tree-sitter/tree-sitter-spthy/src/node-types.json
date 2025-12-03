@@ -7220,8 +7220,7 @@
   },
   {
     "type": "multi_comment",
-    "named": true,
-    "extra": true
+    "named": true
   },
   {
     "type": "multiset",
@@ -7409,8 +7408,7 @@
   },
   {
     "type": "single_comment",
-    "named": true,
-    "extra": true
+    "named": true
   },
   {
     "type": "smallest",
