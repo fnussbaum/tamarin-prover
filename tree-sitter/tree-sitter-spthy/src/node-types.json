@@ -126,13 +126,9 @@
     "named": true,
     "fields": {
       "fact": {
-        "multiple": true,
+        "multiple": false,
         "required": true,
         "types": [
-          {
-            "type": "!",
-            "named": false
-          },
           {
             "type": "linear_fact",
             "named": true

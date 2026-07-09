@@ -3492,35 +3492,33 @@
       "type": "CHOICE",
       "members": [
         {
-          "type": "ALIAS",
-          "content": {
-            "type": "SYMBOL",
-            "name": "fact"
-          },
-          "named": true,
-          "value": "linear_fact"
+          "type": "SYMBOL",
+          "name": "linear_fact"
         },
         {
-          "type": "SEQ",
-          "members": [
-            {
-              "type": "STRING",
-              "value": "!"
-            },
-            {
-              "type": "ALIAS",
-              "content": {
-                "type": "SYMBOL",
-                "name": "fact"
-              },
-              "named": true,
-              "value": "persistent_fact"
-            }
-          ]
+          "type": "SYMBOL",
+          "name": "persistent_fact"
         }
       ]
     },
-    "fact": {
+    "linear_fact": {
+      "type": "SYMBOL",
+      "name": "_base_fact"
+    },
+    "persistent_fact": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "!"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_base_fact"
+        }
+      ]
+    },
+    "_base_fact": {
       "type": "PREC_LEFT",
       "value": 0,
       "content": {
