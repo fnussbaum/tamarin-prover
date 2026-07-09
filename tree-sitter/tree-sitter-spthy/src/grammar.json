@@ -1478,7 +1478,7 @@
         },
         {
           "type": "SYMBOL",
-          "name": "_nested_process"
+          "name": "nested_process"
         },
         {
           "type": "SYMBOL",
@@ -1654,7 +1654,7 @@
         ]
       }
     },
-    "_nested_process": {
+    "nested_process": {
       "type": "SEQ",
       "members": [
         {

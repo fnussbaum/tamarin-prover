@@ -376,6 +376,10 @@
           "named": true
         },
         {
+          "type": "nested_process",
+          "named": true
+        },
+        {
           "type": "non_deterministic_choice",
           "named": true
         },
@@ -721,17 +725,9 @@
         ]
       },
       "else": {
-        "multiple": true,
+        "multiple": false,
         "required": false,
         "types": [
-          {
-            "type": "(",
-            "named": false
-          },
-          {
-            "type": ")",
-            "named": false
-          },
           {
             "type": "binding",
             "named": true
@@ -762,6 +758,10 @@
           },
           {
             "type": "location_process",
+            "named": true
+          },
+          {
+            "type": "nested_process",
             "named": true
           },
           {
@@ -807,17 +807,9 @@
         ]
       },
       "then": {
-        "multiple": true,
+        "multiple": false,
         "required": true,
         "types": [
-          {
-            "type": "(",
-            "named": false
-          },
-          {
-            "type": ")",
-            "named": false
-          },
           {
             "type": "binding",
             "named": true
@@ -848,6 +840,10 @@
           },
           {
             "type": "location_process",
+            "named": true
+          },
+          {
+            "type": "nested_process",
             "named": true
           },
           {
@@ -1189,6 +1185,10 @@
           "named": true
         },
         {
+          "type": "nested_process",
+          "named": true
+        },
+        {
           "type": "non_deterministic_choice",
           "named": true
         },
@@ -1303,6 +1303,10 @@
           "named": true
         },
         {
+          "type": "nested_process",
+          "named": true
+        },
+        {
           "type": "non_deterministic_choice",
           "named": true
         },
@@ -1383,6 +1387,10 @@
         },
         {
           "type": "location_process",
+          "named": true
+        },
+        {
+          "type": "nested_process",
           "named": true
         },
         {
@@ -1982,17 +1990,9 @@
     "named": true,
     "fields": {
       "first": {
-        "multiple": true,
+        "multiple": false,
         "required": true,
         "types": [
-          {
-            "type": "(",
-            "named": false
-          },
-          {
-            "type": ")",
-            "named": false
-          },
           {
             "type": "binding",
             "named": true
@@ -2023,6 +2023,10 @@
           },
           {
             "type": "location_process",
+            "named": true
+          },
+          {
+            "type": "nested_process",
             "named": true
           },
           {
@@ -2068,17 +2072,9 @@
         ]
       },
       "second": {
-        "multiple": true,
+        "multiple": false,
         "required": true,
         "types": [
-          {
-            "type": "(",
-            "named": false
-          },
-          {
-            "type": ")",
-            "named": false
-          },
           {
             "type": "binding",
             "named": true
@@ -2109,6 +2105,10 @@
           },
           {
             "type": "location_process",
+            "named": true
+          },
+          {
+            "type": "nested_process",
             "named": true
           },
           {
@@ -2197,6 +2197,10 @@
         },
         {
           "type": "location_process",
+          "named": true
+        },
+        {
+          "type": "nested_process",
           "named": true
         },
         {
@@ -3198,6 +3202,10 @@
           "named": true
         },
         {
+          "type": "nested_process",
+          "named": true
+        },
+        {
           "type": "non_deterministic_choice",
           "named": true
         },
@@ -3286,6 +3294,10 @@
         },
         {
           "type": "mset_term",
+          "named": true
+        },
+        {
+          "type": "nested_process",
           "named": true
         },
         {
@@ -3571,6 +3583,10 @@
           "named": true
         },
         {
+          "type": "nested_process",
+          "named": true
+        },
+        {
           "type": "non_deterministic_choice",
           "named": true
         },
@@ -3728,6 +3744,10 @@
         },
         {
           "type": "location_process",
+          "named": true
+        },
+        {
+          "type": "nested_process",
           "named": true
         },
         {
@@ -4200,6 +4220,93 @@
     }
   },
   {
+    "type": "nested_process",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "binding",
+          "named": true
+        },
+        {
+          "type": "conditional",
+          "named": true
+        },
+        {
+          "type": "delete_state",
+          "named": true
+        },
+        {
+          "type": "deterministic_choice",
+          "named": true
+        },
+        {
+          "type": "event",
+          "named": true
+        },
+        {
+          "type": "inline_msr_process",
+          "named": true
+        },
+        {
+          "type": "input",
+          "named": true
+        },
+        {
+          "type": "location_process",
+          "named": true
+        },
+        {
+          "type": "nested_process",
+          "named": true
+        },
+        {
+          "type": "non_deterministic_choice",
+          "named": true
+        },
+        {
+          "type": "null",
+          "named": true
+        },
+        {
+          "type": "output",
+          "named": true
+        },
+        {
+          "type": "predefined_process",
+          "named": true
+        },
+        {
+          "type": "process_let",
+          "named": true
+        },
+        {
+          "type": "read_state",
+          "named": true
+        },
+        {
+          "type": "remove_lock",
+          "named": true
+        },
+        {
+          "type": "replication",
+          "named": true
+        },
+        {
+          "type": "set_lock",
+          "named": true
+        },
+        {
+          "type": "set_state",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "nested_term",
     "named": true,
     "fields": {},
@@ -4252,6 +4359,10 @@
         },
         {
           "type": "location_process",
+          "named": true
+        },
+        {
+          "type": "nested_process",
           "named": true
         },
         {
@@ -4444,6 +4555,10 @@
         },
         {
           "type": "mset_term",
+          "named": true
+        },
+        {
+          "type": "nested_process",
           "named": true
         },
         {
@@ -4827,6 +4942,10 @@
           "named": true
         },
         {
+          "type": "nested_process",
+          "named": true
+        },
+        {
           "type": "non_deterministic_choice",
           "named": true
         },
@@ -4874,17 +4993,9 @@
     "named": true,
     "fields": {
       "else": {
-        "multiple": true,
+        "multiple": false,
         "required": false,
         "types": [
-          {
-            "type": "(",
-            "named": false
-          },
-          {
-            "type": ")",
-            "named": false
-          },
           {
             "type": "binding",
             "named": true
@@ -4915,6 +5026,10 @@
           },
           {
             "type": "location_process",
+            "named": true
+          },
+          {
+            "type": "nested_process",
             "named": true
           },
           {
@@ -4960,17 +5075,9 @@
         ]
       },
       "in": {
-        "multiple": true,
+        "multiple": false,
         "required": true,
         "types": [
-          {
-            "type": "(",
-            "named": false
-          },
-          {
-            "type": ")",
-            "named": false
-          },
           {
             "type": "binding",
             "named": true
@@ -5001,6 +5108,10 @@
           },
           {
             "type": "location_process",
+            "named": true
+          },
+          {
+            "type": "nested_process",
             "named": true
           },
           {
@@ -5210,17 +5321,9 @@
     "named": true,
     "fields": {
       "else": {
-        "multiple": true,
+        "multiple": false,
         "required": false,
         "types": [
-          {
-            "type": "(",
-            "named": false
-          },
-          {
-            "type": ")",
-            "named": false
-          },
           {
             "type": "binding",
             "named": true
@@ -5251,6 +5354,10 @@
           },
           {
             "type": "location_process",
+            "named": true
+          },
+          {
+            "type": "nested_process",
             "named": true
           },
           {
@@ -5306,17 +5413,9 @@
         ]
       },
       "in": {
-        "multiple": true,
+        "multiple": false,
         "required": true,
         "types": [
-          {
-            "type": "(",
-            "named": false
-          },
-          {
-            "type": ")",
-            "named": false
-          },
           {
             "type": "binding",
             "named": true
@@ -5347,6 +5446,10 @@
           },
           {
             "type": "location_process",
+            "named": true
+          },
+          {
+            "type": "nested_process",
             "named": true
           },
           {
@@ -5455,6 +5558,10 @@
           "named": true
         },
         {
+          "type": "nested_process",
+          "named": true
+        },
+        {
           "type": "non_deterministic_choice",
           "named": true
         },
@@ -5542,6 +5649,10 @@
           "named": true
         },
         {
+          "type": "nested_process",
+          "named": true
+        },
+        {
           "type": "non_deterministic_choice",
           "named": true
         },
@@ -5622,6 +5733,10 @@
         },
         {
           "type": "location_process",
+          "named": true
+        },
+        {
+          "type": "nested_process",
           "named": true
         },
         {
@@ -6011,6 +6126,10 @@
           "named": true
         },
         {
+          "type": "nested_process",
+          "named": true
+        },
+        {
           "type": "non_deterministic_choice",
           "named": true
         },
@@ -6112,6 +6231,10 @@
         },
         {
           "type": "location_process",
+          "named": true
+        },
+        {
+          "type": "nested_process",
           "named": true
         },
         {
