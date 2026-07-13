@@ -876,32 +876,6 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "ALIAS",
-          "content": {
-            "type": "SYMBOL",
-            "name": "predicate_def"
-          },
-          "named": false,
-          "value": ""
-        },
-        {
-          "type": "STRING",
-          "value": "<=>"
-        },
-        {
-          "type": "FIELD",
-          "name": "formula",
-          "content": {
-            "type": "SYMBOL",
-            "name": "_formula"
-          }
-        }
-      ]
-    },
-    "predicate_def": {
-      "type": "SEQ",
-      "members": [
-        {
           "type": "FIELD",
           "name": "predicate_identifier",
           "content": {
@@ -928,6 +902,18 @@
         {
           "type": "STRING",
           "value": ")"
+        },
+        {
+          "type": "STRING",
+          "value": "<=>"
+        },
+        {
+          "type": "FIELD",
+          "name": "formula",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_formula"
+          }
         }
       ]
     },

@@ -1,31 +1,5 @@
 [
   {
-    "type": "",
-    "named": false,
-    "fields": {
-      "predicate_identifier": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "ident",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": false,
-      "required": false,
-      "types": [
-        {
-          "type": "arguments",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
     "type": "accountability_lemma",
     "named": true,
     "fields": {
@@ -4738,7 +4712,27 @@
             "named": true
           }
         ]
+      },
+      "predicate_identifier": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
       }
+    },
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "arguments",
+          "named": true
+        }
+      ]
     }
   },
   {
